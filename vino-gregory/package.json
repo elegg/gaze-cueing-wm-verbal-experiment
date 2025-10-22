@@ -1,0 +1,48 @@
+{
+  "name": "vino-gregory",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "mode": "development",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js",
+    "deploy": "docker cp /Users/ed/metacognition/vino-gregory/dist/. 138ed13409904de0397a643c30108d5540e371e155720a8bc104e81a56f3d24a:/opt/jatos_data/study_assets_root/28613994-1efa-43cb-a29d-4ae7277202c7",
+    "jatos": "docker run -d -p 9000:9000 --volume jatos_data:/opt/jatos_data jatos/jatos:latest",
+    "html-deploy": "docker cp /Users/ed/metacognition/vino-gregory/pages/. 138ed13409904de0397a643c30108d5540e371e155720a8bc104e81a56f3d24a:/opt/jatos_data/study_assets_root/28613994-1efa-43cb-a29d-4ae7277202c7",
+    "deploy2":"docker cp /Users/ed/metacognition/vino-gregory/dist/. 138ed13409904de0397a643c30108d5540e371e155720a8bc104e81a56f3d24a:/opt/jatos_data/study_assets_root/0efc151d-259a-42ca-b016-9b84941ebf6b",
+    "html-deploy2": "docker cp /Users/ed/metacognition/vino-gregory/pages/exp2/. 138ed13409904de0397a643c30108d5540e371e155720a8bc104e81a56f3d24a:/opt/jatos_data/study_assets_root/0efc151d-259a-42ca-b016-9b84941ebf6b"
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@jspsych/plugin-html-button-response": "^2.1.0",
+    "@jspsych/plugin-html-keyboard-response": "^2.1.0",
+    "css-loader": "^7.1.2",
+    "file-loader": "^6.2.0",
+    "html-loader": "^5.1.0",
+    "jspsych": "^8.2.1",
+    "marked": "^15.0.11",
+    "style-loader": "^4.0.0",
+    "terser-webpack-plugin": "^5.3.14",
+    "webpack": "^5.99.8",
+    "webpack-cli": "^6.0.1"
+  },
+  "dependencies": {
+    "@jspsych/plugin-html-button-response": "^2.1.0",
+    "@jspsych/plugin-html-keyboard-response": "^2.1.0",
+    "@jspsych/plugin-image-keyboard-response": "^2.1.0",
+    "@jspsych/plugin-preload": "^2.1.0",
+    "@kurokida/jspsych-psychophysics": "^4.0.0",
+    "html-loader": "^5.1.0",
+    "marked": "^15.0.11",
+    "remark": "^15.0.1",
+    "remark-html": "^16.0.1",
+    "remark-loader": "^6.0.0",
+    "survey-core": "^2.0.8",
+    "survey-js-ui": "^2.0.8"
+  }
+}

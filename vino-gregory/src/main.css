@@ -1,0 +1,87 @@
+
+
+canvas{
+    margin:auto;
+}
+
+::backdrop
+{
+    background-color: rgb(255, 255, 255);
+}
+
+html, body {
+    background-color: rgb(255, 255, 255);
+    font-family: 'Open Sans';
+    width:100vw;
+    height:100vh;
+}
+
+
+.instructions {
+    background-color: white;
+    max-width: 720px;
+    margin: 36px auto 200px;
+    
+    font-family: 'Open Sans';
+    padding: 24px 36px;
+
+    text-align: left;
+    font-weight: 300;
+    box-shadow: 1px 1px 8px rgba(160, 160, 160, 0.513);
+    font-weight: 200;
+        font-size: 16px;
+    
+    & p {
+        font-weight: 200;
+        font-size: 16px;
+        
+        & strong {
+        font-weight:800;
+    }
+    }
+}
+
+.instruct-image{
+    position:relative;
+    width:100%;
+}
+
+.redirect-widget{
+    background-color: white;
+    padding:24px 16px;
+    position:fixed;
+     bottom:20px;
+     right:20px;
+     max-width: 200px;
+     border-radius: 8px;
+     width:min-content;
+     display:flex;
+     flex-direction: column;
+     gap:12px;
+     box-shadow: 1px 1px 8px rgba(160, 160, 160, 0.513);
+
+     
+
+ }
+
+ .redirect-link{
+     all:unset;
+     background-color: rgb(18, 49, 190);
+     font-size: 16px;
+     padding:8px 12px;
+     color:white;
+     cursor: pointer;
+     border-radius: 6px;
+     width:max-content;
+     box-shadow: 1px 1px 8px rgba(160, 160, 160, 0.513);
+
+
+ }
+
+ .redirect-link:hover{
+     opacity:50%;
+ }
+
+ .hidden-button{
+    visibility: hidden;
+ }
