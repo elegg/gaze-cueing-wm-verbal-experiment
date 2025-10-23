@@ -9,8 +9,8 @@ import faces from './helpers/imageElements.js'
 import trialFactory from './helpers/trialFactory.js'
 
 
-import style from '../src/jspsych.css'
-import style2 from '../src/main.css'
+import style from './jspsych.css'
+import style2 from './main.css'
 import { pause, feedbackPause } from './routines/pause.js';
 import { fullScreenToggle } from './routines/fullScreenToggle.js';
 import saveData from './routines/saver.js';

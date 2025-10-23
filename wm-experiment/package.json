@@ -10,10 +10,8 @@
     "build": "webpack --config webpack.config.js",
     "deploy": "docker cp /Users/ed/metacognition/vino-gregory/dist/. 138ed13409904de0397a643c30108d5540e371e155720a8bc104e81a56f3d24a:/opt/jatos_data/study_assets_root/28613994-1efa-43cb-a29d-4ae7277202c7",
     "jatos": "docker run -d -p 9000:9000 --volume jatos_data:/opt/jatos_data jatos/jatos:latest",
-    "html-deploy": "docker cp /Users/ed/metacognition/vino-gregory/pages/. 138ed13409904de0397a643c30108d5540e371e155720a8bc104e81a56f3d24a:/opt/jatos_data/study_assets_root/28613994-1efa-43cb-a29d-4ae7277202c7",
-    "deploy2":"docker cp /Users/ed/metacognition/vino-gregory/dist/. 138ed13409904de0397a643c30108d5540e371e155720a8bc104e81a56f3d24a:/opt/jatos_data/study_assets_root/0efc151d-259a-42ca-b016-9b84941ebf6b",
-    "html-deploy2": "docker cp /Users/ed/metacognition/vino-gregory/pages/exp2/. 138ed13409904de0397a643c30108d5540e371e155720a8bc104e81a56f3d24a:/opt/jatos_data/study_assets_root/0efc151d-259a-42ca-b016-9b84941ebf6b"
-
+    "html-deploy": "docker cp /Users/ed/metacognition/vino-gregory/pages/. 138ed13409904de0397a643c30108d5540e371e155720a8bc104e81a56f3d24a:/opt/jatos_data/study_assets_root/28613994-1efa-43cb-a29d-4ae7277202c7"
+ 
   },
   "keywords": [],
   "author": "",
